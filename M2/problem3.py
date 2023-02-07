@@ -9,7 +9,7 @@ def process_array(num, arr):
     print(arr)
     print("\nPositive Output:\n")
     x =[]
-    # TODO add new code here to print the desired result
+    #UCID - vp645 Date 02/06/2022 - Positive change value
     for i in arr:
         if type(i) == str:
             i = abs(int(i))
