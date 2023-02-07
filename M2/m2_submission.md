@@ -38,7 +38,7 @@
 </table></td></tr>
 <table><tr><td> <em>Deliverable 4: </em> Misc Items </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://user-images.githubusercontent.com/54863474/211707773-e6aef7cb-d5b2-4053-bbb1-b09fc609041e.png"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Pull Request URL for M2-Python-HW to dev</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/vanditpopat/IS601-004/pull/4">https://github.com/vanditpopat/IS601-004/pull/4</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/vanditpopat/IS601-004/pull/4">https://github.com/vanditpopat/IS601-004/pull/5</a> </td></tr>
 <tr><td> <em>Sub-Task 2: </em> Talk about what you learned, any issues you had, how you resolve them</td></tr>
 <tr><td> <em>Response:</em> <p>In this topic we learned about the basics of Python and using for<br>if and else solve a few problem statement to get the gist of<br>how python as a language works, learnt about different functions like abs .2f<br>and also about the list tuples dictionary.<br></p><br></td></tr>
 </table></td></tr>
