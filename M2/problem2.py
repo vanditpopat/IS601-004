@@ -16,7 +16,7 @@ def process_array(num, arr):
     print("\nProcessing Array({}): \n\n".format(num))
     print(arr)
     total = 0.00
-    # TODO add necessary code here for sum; every number must have two decimal places shown
+    #UCID - vp645 Date 02/06/2022 - Total
     for i in arr:
         total +=i
     total = "%0.2f" % total
