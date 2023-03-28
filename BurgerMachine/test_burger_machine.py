@@ -134,6 +134,7 @@ def test_case_three(machine):
         assert True
 
 def test_case_four(machine):
+    #vp645 Date 27 March 2023
     try:
         machine.reset()
 
@@ -154,6 +155,7 @@ def test_case_four(machine):
         assert True
 
 def test_case_five(machine):
+    #vp645 Date 27 March 2023
     try:
         machine.reset()
 
@@ -172,6 +174,7 @@ def test_case_five(machine):
         assert True
 
 def test_case_six(machine):
+    #vp645 Date 27 March 2023
     count = 0
 
     bun = random.randrange(0, 4, 1)
@@ -190,6 +193,7 @@ def test_case_six(machine):
     
 
 def test_case_seven(machine):
+    #vp645 Date 27 March 2023
     machine.reset()
 
     machine.handle_bun("wheat burger bun")
@@ -213,7 +217,7 @@ def test_case_seven(machine):
     machine.reset()
 
     machine.handle_bun("no bun")
-    machine.handle_patty("turkey")
+    machine.handle_patty("veggie")
     machine.handle_patty("next")
     machine.handle_toppings("done")
     burger_cost = machine.calculate_cost()
@@ -222,6 +226,7 @@ def test_case_seven(machine):
     assert machine.total_sales == 5
 
 def test_case_eight(machine):
+    #vp645 Date 27 March 2023
     machine.reset()
 
     machine.handle_bun("wheat burger bun")

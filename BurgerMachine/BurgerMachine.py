@@ -8,7 +8,7 @@ class Usable:
     quantity = 0
     cost = 99
 
-    def __init__(self, name, quantity = 20, cost=99):
+    def __init__(self, name, quantity = 2000000, cost=99):
         self.name = name
         self.quantity = quantity
         self.cost = cost
