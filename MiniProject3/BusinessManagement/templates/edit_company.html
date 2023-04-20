@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block title %}Edit Company{% endblock %}
+{% block content %}
+{% from "country_state_selector.html" import country_state_selector %}
+
+<div class="container-fluid">
+    <div class="h1">Edit Company</div>
+    <div>
+        <form method="POST">
+            {#
+            generate fields with proper types for
+            name (required)
+            address (required)
+            city (required)
+            state/country (use the country_state_selector)
+            zip (required)
+            website (not required)
+            and prefill the fields with loaded company data
+            vp645 Date 8/15/2023
+            #}
+            <div class="form-group mb-3">
+                <label for="name" class="form-label">Company Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="name" placeholder="Company Name" name="name" value="{{ company['name'] if company else '' }}" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="address" class="form-label">Company Address <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="address" placeholder="Company Address" name="address" value="{{ company['address'] if company else '' }}" required>
+            </div>
+            <div class="form-group mb-3">
+                {{ country_state_selector(country=company.country, state=company.state) }}
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="city" class="form-label">City <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="city" placeholder="City" name="city" value="{{ company['city'] if company else '' }}" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="zipcode" class="form-label">Zipcode <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="zipcode" placeholder="Zipcode" name="zip" value="{{ company['zip'] if company else '' }}" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="website" class="form-label">Company Website</label>
+                <input type="text" class="form-control" id="website" placeholder="Company Website" value="{{ company['website'] if company else '' }}" name="website">
+            </div>
+
+            {# use this for country/state selection #}
+            
+
+            <input type="submit" class="btn btn-primary" value="Save Company" />
+            <a href="{{url_for('company.search')}}"><input type="button" class="btn btn-secondary" value="Cancel" /></a>
+        </form>
+    </div>
+</div>
+{% endblock %}
