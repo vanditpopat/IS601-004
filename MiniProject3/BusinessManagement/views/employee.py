@@ -25,8 +25,9 @@ def search():
     # TODO search-7 append sorting if column and order are provided and within the allowed columns and order options (asc, desc)
     # TODO search-8 append limit (default 10) or limit greater than 1 and less than or equal to 100
     # TODO search-9 provide a proper error message if limit isn't a number or if it's out of bounds
-    #vp645 Date 8/15/2023
+    #vp645 Date 4/15/2023
     limit = 10 # TODO change this per the above requirements
+    #vp645 Date 4.15.2023
     if request.args.get('fn'):
         fn = request.args.get('fn')
         query += " and first_name like %(fn)s"
@@ -67,7 +68,7 @@ def search():
     except Exception as e:
         # TODO search-10 make message user friendly
         print(str(e))
-        flash("Something wen't wrong, please try again later", "warning")
+        flash("Something went wrong, please try again later", "warning")
     # hint: use allowed_columns in template to generate sort dropdown
     # hint2: convert allowed_columns into a list of tuples representing (value, label)
     # do this prior to passing to render_template, but not before otherwise it can break validation
@@ -197,7 +198,7 @@ def edit():
         except Exception as e:
             # TODO edit-9 make this user-friendly
             print(str(e))
-            flash("Something wen't wrong, please try again later", "danger")
+            flash("Something went wrong, please try again later", "danger")
     # TODO edit-10 pass the employee data to the render template
     return render_template("edit_employee.html", employee=row)
 @employee.route("/delete", methods=["GET"])
