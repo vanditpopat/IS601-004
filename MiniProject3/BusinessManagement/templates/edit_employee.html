@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block title %}Edit Employee{% endblock %}
+{% block content %}
+{% from "company_dropdown.html" import company_dropdown %}
+
+<div class="container-fluid">
+    <div class="h1">Edit Employee</div>
+    <div>
+        <form method="POST">
+            {#
+            generate fields with proper types for
+            first_name (required)
+            last_name (required)
+            email (required)
+            and prefill the fields with loaded employee data
+            vp645 Date 8/15/2023
+            #}
+            <div class="form-group mb-3">
+                <label for="first_name" class="form-label">First Name</label>
+                <input id="first_name" class="form-control" name="first_name" type="text" value="{{ employee.first_name }}">
+            </div>
+            <div class="form-group mb-3">
+                <label for="lastname" class="form-label">Last Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" value="{{ employee.last_name }}"> 
+            </div>
+            <div class="form-group mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" class="form-control" name="email" type="text" value="{{ employee.email }}">
+            </div>
+            <div class="form-group mb-3">
+                <label for="company" class="form-label">Company Name</label>
+                    {{ company_dropdown(employee.company) }}
+            </div>
+            {# use the below for company selection #}
+            
+
+            <input type="submit" class="btn btn-primary" value="Save Employee" />
+            <a href="{{url_for('employee.search')}}"><input type="button" class="btn btn-secondary" value="Cancel" /></a>
+        </form>
+    </div>
+</div>
+{% endblock %}
