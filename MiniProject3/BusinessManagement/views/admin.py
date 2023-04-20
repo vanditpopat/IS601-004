@@ -6,6 +6,7 @@ import traceback
 import csv
 admin = Blueprint('admin', __name__, url_prefix='/admin')
 
+#vp645, date 3/4/2023
 ALLOWED_EXTENSIONS = {'csv'}
 
 def allowed(filename):

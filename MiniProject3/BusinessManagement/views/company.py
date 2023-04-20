@@ -95,7 +95,7 @@ def add():
             # TODO add-7 website is not required
             # note: call zip variable zipcode as zip is a built in function it could lead to issues
         '''
-        
+        #vp645 Date 8/14/2023
         companyname = request.form.get('name', "")
         companyaddress = request.form.get('address', "")
         country = request.form.get('country', "")
