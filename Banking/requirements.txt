@@ -37,3 +37,4 @@ virtualenv==20.16.5
 Werkzeug==2.2.2
 WTForms==3.0.1
 zipp==3.9.0
+pymysql
