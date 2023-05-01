@@ -1,188 +1,194 @@
 <table><tr><td> <em>Assignment: </em> IS601 Milestone1 Deliverable</td></tr>
-<tr><td> <em>Student: </em> Vandit Tejas Popat (vp645)</td></tr>
-<tr><td> <em>Generated: </em> 5/1/2023 12:49:05 PM</td></tr>
-<tr><td> <em>Grading Link: </em> <a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-004-S23/is601-milestone1-deliverable/grade/vp645" target="_blank">Grading</a></td></tr></table>
+<tr><td> <em>Student: </em> Joy Prakashchandra Patel (jp2267)</td></tr>
+<tr><td> <em>Generated: </em> 11/12/2022 16:05:25</td></tr>
+<tr><td> <em>Grading Link: </em> <a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-005-F22/is601-milestone1-deliverable/grade/jp2267" target="_blank">Grading</a></td></tr></table>
 <table><tr><td> <em>Instructions: </em> <ol><li>Checkout Milestone1 branch</li><li>Create a milestone1.md file in your Project folder</li><li>Git add/commit/push this empty file to Milestone1 (you'll need the link later)</li><li>Ensure your images display correctly in the sample markdown at the bottom</li><ol><li>NOTE: You may want to try to capture as much checklist evidence in your screenshots as possible, you do not need individual screenshots and are recommended to combine things when possible. Also, some screenshots may be reused if applicable.</li></ol><li>Save the submission items</li><li>Copy/paste the markdown from the "Copy markdown to clipboard link" or via the download button</li><li>Paste the code into the milestone1.md file or overwrite the file</li><li>Git add/commit/push the md file to Milestone1</li><li>Double check the images load when viewing the markdown file (points will be lost for invalid/non-loading images)</li><li>Make a pull request from Milestone1 to dev and merge it (resolve any conflicts)<ol><li>Make sure everything looks ok on heroku dev</li></ol></li><li>Make a pull request from dev to prod (resolve any conflicts)<ol><li>Make sure everything looks ok on heroku prod</li></ol></li><li>Submit the direct link from github prod branch to the milestone1.md file (no other links will be accepted and will result in 0)</li></ol></td></tr></table>
-<table><tr><td> <em>Deliverable 1: </em> Feature: User will be able to register a new account </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://user-images.githubusercontent.com/54863474/211707773-e6aef7cb-d5b2-4053-bbb1-b09fc609041e.png"></td></tr>
+<table><tr><td> <em>Deliverable 1: </em> Feature: User will be able to register a new account </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Add one or more screenshots of the application showing the form and validation errors per the feature requirements</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235378836-b2d3e919-ab4a-4b85-bfef-59f9c031f579.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>The above ss shows I cannot move ahead without valid email<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206923047-914cbc35-ddff-4454-9b9e-83e83735e7c1.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>It shows invalid email validation<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235378867-a2d5f838-3495-4c62-9ada-1f3b491a3651.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>The above ss shows I cannot move ahead without a 8 character password<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206923105-313f06b2-a1d4-45e9-83b8-40e6646beadd.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>It shows invalid password validation<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235378900-777bb938-7370-4c20-a967-b1c35b0f36f3.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>The above ss shows I cannot move ahead if the password doesnt match<br><br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206923142-8c1172a1-ec68-4a4e-b72d-5d945722cf32.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Show passwords not much validation<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235378955-c658adf8-a748-4fac-8916-f2decbf77bdd.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>The above ss shows if I try to use the same email it<br>gives me an error for the same <br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206923202-b4b93c63-1b4e-4775-81ed-4ade6c474172.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Show email not available validation (already registered)<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235379025-0cbac90a-e134-4e3c-8b04-f12585ae3bc3.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>The above ss shows if I try to use the same username it<br>gives me an error for the same<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206923221-a45039bb-3dde-4bcf-b4ec-7b4cc3378744.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Show username not available validation (username is taken)<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235379097-76057bd8-1b4a-4fe1-ad32-b4462d80f816.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>The above ss shows the user registered successfully<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206923244-5a9f14f7-2bb5-4ee6-b05f-5be5632d2436.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Show the form with valid data filled in before the form is submitted<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206923272-3a60029a-62b6-446a-94bb-bc3c1c561461.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Successfully added record<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Add a screenshot of the Users table with data in it</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235380600-3221f762-630d-439a-bac7-dc5d5f6655eb.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>We can see the user added in the last row <br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206923334-bf5fd3a1-5ae7-412a-8c18-711fce927fbd.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Users table<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 3: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/vanditpopat/IS601-004/pull/27">https://github.com/vanditpopat/IS601-004/pull/27</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/jp2267/is-601-005/pull/24">https://github.com/jp2267/is-601-005/pull/24</a> </td></tr>
 <tr><td> <em>Sub-Task 4: </em> Explain briefly how the process/code works</td></tr>
-<tr><td> <em>Response:</em> <div>The form is handles using wtf flask form</div><div>We have used wtf form validators<br>like validators = [DataRequired(), Email() ] this means this is required</div><div>The password is<br>handled by bycrypt algorithm hashes and salt password securely</div><div>The db is utilized by<br>only basic operation of create update delete</div><br></td></tr>
+<tr><td> <em>Response:</em> <ul><li>The form is handle using the wtf flask forms.</li><li>The validation are used by<br>wtf forms validators functions.</li><li>The password is handle by bcrypt algorithm which hases the<br>password in a plain text.</li><li>The db is utilized for basic database operation such<br>as create, read ,update and delete.</li></ul><br></td></tr>
 </table></td></tr>
-<table><tr><td> <em>Deliverable 2: </em> Feature: User will be able to login to their account </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://user-images.githubusercontent.com/54863474/211707773-e6aef7cb-d5b2-4053-bbb1-b09fc609041e.png"></td></tr>
+<table><tr><td> <em>Deliverable 2: </em> Feature: User will be able to login to their account </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Add one or more screenshots of the application showing the form and validation errors per the feature requirements</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235393543-625f1219-cd7e-4142-9e91-2cad276290ed.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>The user exist in database but i entered wrong password and got this<br>error<br></p>
-</td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235393639-6a19b8d4-f34b-4f95-8053-4ca04e480b15.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>The above user does not exist<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206923142-8c1172a1-ec68-4a4e-b72d-5d945722cf32.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Show password mismatch validation<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Add a screenshot of successful login</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235393864-7da8cbf3-038c-473f-99f9-43851ff2da0f.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>This Shows a flash message for successful login as well as the landing<br>screen<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206924075-ceb0e53a-0d0a-4388-9be8-125846b30892.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Entered the login credentials<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206924088-dd92fb3e-c465-4799-a0e2-9567171a107f.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>successful login<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 3: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/vanditpopat/IS601-004/pull/27">https://github.com/vanditpopat/IS601-004/pull/27</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/jp2267/is-601-005/pull/24">https://github.com/jp2267/is-601-005/pull/24</a> </td></tr>
 <tr><td> <em>Sub-Task 4: </em> Explain briefly how the process/code works</td></tr>
-<tr><td> <em>Response:</em> <div>The form is handles using wtf flask form</div><div>We have used wtf form validators<br>like validators = [DataRequired(), Email() ] this means this is required</div><div>The password is<br>handled by bycrypt algorithm hashes and salt password securely</div><div>The db is utilized by<br>only basic operation of create update delete</div><br></td></tr>
+<tr><td> <em>Response:</em> <ul><li>The form is handle using the wtf flask forms.</li><li>The validation are used by<br>wtf forms validators functions.</li><li>The password is handle by bcrypt algorithm which hases the<br>password in a plain text.</li><li>The db is utilized for basic database operation such<br>as creat, read ,update and delete.</li></ul><br></td></tr>
 </table></td></tr>
-<table><tr><td> <em>Deliverable 3: </em> Feat: Users will be able to logout </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://user-images.githubusercontent.com/54863474/211707773-e6aef7cb-d5b2-4053-bbb1-b09fc609041e.png"></td></tr>
+<table><tr><td> <em>Deliverable 3: </em> Feat: Users will be able to logout </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Add a screenshot showing the successful logout message</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235394689-45972ef1-1fb7-4f36-84eb-2bad9f2cfde7.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Flash message showing the logout successful message<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206924203-5d89574e-b83a-43de-a390-8ccda7768bb1.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>It shows the user is logged out<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Add a screenshot showing the logged out user can't access a login-protected page</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235396063-17cb0feb-4876-410c-b29d-920b924927c6.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Tried going to the landing page without login so got unauthorized error<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206924245-6dbe4e2b-b6e1-4566-9536-ce4c0b3337c3.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>user can&#39;t access a login-protected page<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 3: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/vanditpopat/IS601-004/pull/27">https://github.com/vanditpopat/IS601-004/pull/27</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/jp2267/is-601-005/pull/24">https://github.com/jp2267/is-601-005/pull/24</a> </td></tr>
 <tr><td> <em>Sub-Task 4: </em> Explain briefly how the process/code works</td></tr>
-<tr><td> <em>Response:</em> <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">The session logic is used from<br>flask login.<o:p></o:p></span></p><br><br><p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">We will store the users<br>id<br><br>in the active session so he can access the login protected pages.<o:p></o:p></span></p><br><br><p class="MsoNormal"><span<br>style="font-size:12.0pt;line-height:107%;font-family:<br>&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-font-kerning:<br>0pt;mso-ligatures:none;mso-fareast-language:EN-IN">When the user logged out the users id is<br>removed from the session.</span><o:p></o:p></p><br></td></tr>
+<tr><td> <em>Response:</em> <ul><li>The session logic is used from flask login.</li><li>We will store the users id<br>in the active session so he can access the login protected pages.</li><li>When the<br>user logged out the users id is removed from the session.</li></ul><br></td></tr>
 </table></td></tr>
-<table><tr><td> <em>Deliverable 4: </em> Feature: Basic Security Rules Implemented / Basic Roles Implemented </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://user-images.githubusercontent.com/54863474/211707773-e6aef7cb-d5b2-4053-bbb1-b09fc609041e.png"></td></tr>
+<table><tr><td> <em>Deliverable 4: </em> Feature: Basic Security Rules Implemented / Basic Roles Implemented </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Add a screenshot showing the logged out user can't access a login-protected page (may be the same as similar request)</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235396063-17cb0feb-4876-410c-b29d-920b924927c6.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Tried going to the landing page without login so got unauthorized error<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206924245-6dbe4e2b-b6e1-4566-9536-ce4c0b3337c3.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>user can&#39;t access a login-protected page<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Add a screenshot showing a user without an appropriate role can't access the role-protected page</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235406525-c96eb391-3dd3-441d-b4a4-51d5e3d1c5a6.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Tried accessing add roles page but cannot as not logged in as an<br>admin<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206924674-3c710698-75fe-4995-b4b8-2cc092b1cc9e.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>screenshot showing a user without an appropriate role can&#39;t access the role-protected page<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 3: </em> Add a screenshot of the Roles table with valid data</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235407413-e76a60ca-e674-4f4c-92d0-6de2bb8ecb46.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>The snapshot shows admin as role<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206924856-6e709a0f-1236-472a-a582-2fe3c3dd3e3a.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Roles Table<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 4: </em> Add a screenshot of the UserRoles table with valid data</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235408140-3ff362ab-244c-4fb6-a35f-325b9553a905.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>This is the Userrole table<br></p>
-</td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235408229-c16e4d86-1fca-4631-8075-b88d277b85f5.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>This is the user table where user with id 1 is admin<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206924902-80823af5-6681-4b17-84fa-67e56d69349c.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>first user is the admin<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 5: </em> Add the related pull request(s) for these features</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/vanditpopat/IS601-004/pull/27">https://github.com/vanditpopat/IS601-004/pull/27</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/jp2267/is-601-005/pull/24">https://github.com/jp2267/is-601-005/pull/24</a> </td></tr>
 <tr><td> <em>Sub-Task 6: </em> Explain briefly how the process/code works for login-protected pages</td></tr>
-<tr><td> <em>Response:</em> <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp;roles are assigned to the user<o:p></o:p></span></p><br><br><p>&lt;p<br>class=&quot;MsoNormal&quot; style=&quot;margin-bottom:0cm;line-height:normal&quot;&gt;<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp;when the assigned role user<br>login, he will<br><br>only<br>be able to see limited part which is set by the admin&lt;o:p&gt;</o:p></span></p></p><br><p class="MsoNormal"><span<br>style="font-size:12.0pt;line-height:107%;font-family:<br>&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-font-kerning:<br>0pt;mso-ligatures:none;mso-fareast-language:EN-IN">We are using flask principle<br>for the roles part<o:p></o:p></span></p><br></td></tr>
+<tr><td> <em>Response:</em> <ul><li>roles are assigned to the user</li><li>when the assigned role user login, he will<br>only be able to see limited part which is set by the admin</li><li>We<br>are using flask principle for the roles part</li></ul><br></td></tr>
 <tr><td> <em>Sub-Task 7: </em> Explain briefly how the process/code works for role-protected pages</td></tr>
-<tr><td> <em>Response:</em> <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">In the application i have defined<br>one admin permission object with the<br>help<br><br>of flask principle package<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New<br>Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">The session will check for the active roles assigned to<br><br>the user.<o:p></o:p></span></p><p<br>class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><br><br><br><br></p><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:<br>&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-font-kerning:<br>0pt;mso-ligatures:none;mso-fareast-language:EN-IN">&nbsp;For example if the user has<br>the admin role<br>assigned then he<br><br>will able to perform all the admin stuff such<br>as create role and<br><br>assign role to users<o:p></o:p></span></p><br></td></tr>
+<tr><td> <em>Response:</em> <ul><li>In the application i have defined one admin permission object with the help<br>of flask principle package</li><li>The session will check for the active roles assigned to<br>the user.</li><li>For example if the user has the admin role assigned then he<br>will able to perform all the admin stuff such as create role and<br>assign role to users.</li></ul><br></td></tr>
 </table></td></tr>
-<table><tr><td> <em>Deliverable 5: </em> Feature: Site should have basic styles/theme applied; everything should be styled </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://user-images.githubusercontent.com/54863474/211707773-e6aef7cb-d5b2-4053-bbb1-b09fc609041e.png"></td></tr>
+<table><tr><td> <em>Deliverable 5: </em> Feature: Site should have basic styles/theme applied; everything should be styled </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Add screenshots to show examples of your site's styles/theme</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235484493-d86bf89b-8b81-4d7f-bf32-0c01a86ee1dd.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Navigation is styled<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206925020-bdd522bb-64f0-4547-a89c-8a9cbfaae884.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>It shows basic style is given<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235484594-7985b464-a498-4be3-a30c-ab431a309369.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Data Output is in a clean way <br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206925064-4fb0ed89-3030-4f15-beee-586db853fb5d.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>It shows basic style is given<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235484948-daee0377-d080-4150-8124-b713e1296df3.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Forms are styled properly as well<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206925091-9e6d43ce-5ebd-44ab-b124-77abb3b9639a.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>form is proper formated<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/vanditpopat/IS601-004/pull/27">https://github.com/vanditpopat/IS601-004/pull/27</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/jp2267/is-601-005/pull/24">https://github.com/jp2267/is-601-005/pull/24</a> </td></tr>
 <tr><td> <em>Sub-Task 3: </em> Briefly explain your CSS at a high level</td></tr>
-<tr><td> <em>Response:</em> <p>I have used bootstrap for the styling of forms and nav bars<br></p><br></td></tr>
+<tr><td> <em>Response:</em> <ul><li>I have used bootstrap classes for styling the navigation bar, the form fields<br>and the body content of the web application.</li></ul><br></td></tr>
 </table></td></tr>
-<table><tr><td> <em>Deliverable 6: </em> Feature: Any output messages/errors should be "user friendly" </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://user-images.githubusercontent.com/54863474/211707773-e6aef7cb-d5b2-4053-bbb1-b09fc609041e.png"></td></tr>
+<table><tr><td> <em>Deliverable 6: </em> Feature: Any output messages/errors should be "user friendly" </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Add screenshots of some examples of errors/messages</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235396063-17cb0feb-4876-410c-b29d-920b924927c6.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>This is the unauthorized access error if not logged in <br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206925194-016363a2-dc1a-47fc-aa71-72e3893b59f9.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>permission denied message<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235393543-625f1219-cd7e-4142-9e91-2cad276290ed.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>I entered the wrong password for an existing user<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206925617-fbb2bc99-5ccf-4e0a-9670-f9a8d06f259d.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>username already exist message<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235406525-c96eb391-3dd3-441d-b4a4-51d5e3d1c5a6.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Persmission denied as not the right role was logged in<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206925657-7f088b20-bbd0-4abb-9a94-d01821bc6dbb.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>email already exist message<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Add a related pull request</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/vanditpopat/IS601-004/pull/27">https://github.com/vanditpopat/IS601-004/pull/27</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/jp2267/is-601-005/pull/24">https://github.com/jp2267/is-601-005/pull/24</a> </td></tr>
 <tr><td> <em>Sub-Task 3: </em> Briefly explain how you made messages user friendly</td></tr>
-<tr><td> <em>Response:</em> <p>We are using flask flash messages function to show user friendly message witht<br>the help of exception handling when a error occur a custom message id<br>displayed in the web application&nbsp;<br></p><br></td></tr>
+<tr><td> <em>Response:</em> <ul><li>We are using flask flash messages function to show user user friendly message<br>with the help of exception handling when a error occur a custom message<br>id displayed in the web application.&nbsp; &nbsp;&nbsp;</li></ul><br></td></tr>
 </table></td></tr>
-<table><tr><td> <em>Deliverable 7: </em> Feature: Users will be able to see their profile </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://user-images.githubusercontent.com/54863474/211707773-e6aef7cb-d5b2-4053-bbb1-b09fc609041e.png"></td></tr>
+<table><tr><td> <em>Deliverable 7: </em> Feature: Users will be able to see their profile </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Add screenshots of the User Profile page</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235487165-c985b6f5-9d5f-4563-b98d-6af61d057ef3.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Snapshot of the profile with prefilled username and email<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206925876-ab1977c9-f040-43aa-a6a5-f986429c87b5.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>it shows the users profile with pre-filled data<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/vanditpopat/IS601-004/pull/27">https://github.com/vanditpopat/IS601-004/pull/27</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/jp2267/is-601-005/pull/24">https://github.com/jp2267/is-601-005/pull/24</a> </td></tr>
 <tr><td> <em>Sub-Task 3: </em> Explain briefly how the process/code works (view only)</td></tr>
-<tr><td> <em>Response:</em> <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">It is happening with the help<br>of current user flask login object values<br><br>and we are pulling the data from<br>the database of the particular user login.&nbsp;<o:p></o:p></span></p><br><br><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:<br>&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-font-kerning:<br>0pt;mso-ligatures:none;mso-fareast-language:EN-IN">The<br>flask login will retrive<br>the data into the form.<o:p></o:p></span></p><br></td></tr>
+<tr><td> <em>Response:</em> <ul><li>It is happening with the help of current user flask login object values<br>and we are pulling the data from the database of the particular user<br>login.&nbsp;</li><li>The flask login will retrive the data into the form.</li></ul><br></td></tr>
 </table></td></tr>
-<table><tr><td> <em>Deliverable 8: </em> Feature: User will be able to edit their profile </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://user-images.githubusercontent.com/54863474/211707773-e6aef7cb-d5b2-4053-bbb1-b09fc609041e.png"></td></tr>
+<table><tr><td> <em>Deliverable 8: </em> Feature: User will be able to edit their profile </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Add screenshots of the User Profile page validation messages and success messages</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235488387-ac349db8-a5ff-413c-aac5-0156a6b6fffe.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Username is required<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206926111-2d70f41b-84f6-4f27-8ff2-0f6508adadca.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Show username validation message<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235488483-400063e5-f944-4c3e-a644-37f9e789727f.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Proper Email is required<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206926197-a570acc6-fe5c-4e1f-a550-8468996f46f4.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Show email validation message<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235488806-748ef71b-0199-4f0a-a9a8-0dc58bf06c73.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Invalid Password error<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206926301-7538b5e5-4ea9-44d1-8eae-b5115be3625f.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Show password validation message<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235488947-766ac108-4aa9-4753-9b57-9de54b8696be.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Password Mismatch error<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206926240-f229e8e4-68a7-4cbe-821d-18278a9bf07a.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Show password mismatch message<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235489119-fd037a11-53e1-4bfe-bb43-d191a26ad331.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Username exist<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206926368-6b8a8739-6ec8-4fd4-9f4e-9f5f32346476.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Show username already in use message<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206926443-3374d298-d0dd-483d-9e4d-4a1a98d5d0c3.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>Show email already in use message<br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Add before and after screenshots of the Users table when a user edits their profile</td></tr>
-<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235489239-acc963c1-c2bf-44e2-9cf4-8b354f7cb644.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Before the change<br></p>
+<tr><td><table><tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206926557-3cf0a216-e95c-4dfb-9d88-5c3eb4430450.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>before editing see the second record<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235489351-2f69020e-b52f-4169-9faf-4ab925b5d761.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>After username update<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206926583-d57834ee-ecff-4c53-8842-0a4416cb3a76.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>after editing see the second record<br></p>
 </td></tr>
-<tr><td><img width="768px" src="https://user-images.githubusercontent.com/51928264/235489590-c75e5930-4ece-491b-b2a2-ea1b2f8c6ee4.png"/></td></tr>
-<tr><td> <em>Caption:</em> <p>Database updated user<br></p>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206926601-0a87c02d-4543-4419-bff1-4ee59928ac1b.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>editing record<br></p>
+</td></tr>
+<tr><td><img width="768px" src="https://user-images.githubusercontent.com/113148416/206926637-52493147-f9d3-495d-b28a-873febc39ff7.png"/></td></tr>
+<tr><td> <em>Caption:</em> <p>record edited <br></p>
 </td></tr>
 </table></td></tr>
 <tr><td> <em>Sub-Task 3: </em> Add the related pull request(s) for this feature</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/vanditpopat/IS601-004/pull/27">https://github.com/vanditpopat/IS601-004/pull/27</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://github.com/jp2267/is-601-005/pull/24">https://github.com/jp2267/is-601-005/pull/24</a> </td></tr>
 <tr><td> <em>Sub-Task 4: </em> Explain briefly how the process/code works (edit only)</td></tr>
-<tr><td> <em>Response:</em> <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp;for the validation we are using<br>the<br>wtf form validators<o:p></o:p></span></p><br><br><p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp;we will get the<br>user from the flask login object<o:p></o:p></span></p><br><br><p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">after<br>editing the data the session will be<br><br>refreshed with the updated record<o:p></o:p></span></p><br><br><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:<br>&quot;Times<br>New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-font-kerning:<br>0pt;mso-ligatures:none;mso-fareast-language:EN-IN">It works similar as the<br>register route.&nbsp;<o:p></o:p></span></p><br></td></tr>
+<tr><td> <em>Response:</em> <ul><li>for the validation we are using the wtf form validators</li><li>we will get the<br>user from the flask login object</li><li>after editing the data the session will be<br>refreshed with the updated record</li><li>It works similar as the register route.&nbsp;</li></ul><br></td></tr>
 </table></td></tr>
-<table><tr><td> <em>Deliverable 9: </em> Misc </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="https://user-images.githubusercontent.com/54863474/211707773-e6aef7cb-d5b2-4053-bbb1-b09fc609041e.png"></td></tr>
+<table><tr><td> <em>Deliverable 9: </em> Misc </td></tr><tr><td><em>Status: </em> <img width="100" height="20" src="http://via.placeholder.com/400x120/009955/fff?text=Complete"></td></tr>
 <tr><td><table><tr><td> <em>Sub-Task 1: </em> Describe any issues and learnings throughout this milestone</td></tr>
-<tr><td> <em>Response:</em> <p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp;In these milestone I learned the<br>user<br>authentication using the wtf forms, validators<br><br>and flask login<o:p></o:p></span></p><br><br><p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;<br>mso-fareast-font-family:&quot;Times<br>New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;<br>mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:EN-IN">·</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp; I also learned about<br>registering<br>the user<o:p></o:p></span></p><br><br><p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;<br>mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;<br>mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:EN-IN">·</span><span style="font-size:12.0pt;font-family:&quot;Times New<br>Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp; I learned that the user<br><br>can login with the username and<br>email, for these we are using the rex functions<o:p></o:p></span></p><br><br><p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:Symbol;mso-ascii-font-family:&quot;Times New<br>Roman&quot;;<br>mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;<br>mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:EN-IN">·</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp; I learned about<br>the user roles<br>using flask principles.<o:p></o:p></span></p><br><br><p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;<br>mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New<br>Roman&quot;;<br>mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:EN-IN">·</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp; I learned about the sessions<o:p></o:p></span></p><br><br><p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span<br>style="font-size:12.0pt;font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;<br>mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;<br>mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:EN-IN">·</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp; I<br>learned about how to show<br>error friendly messages to the user<o:p></o:p></span></p><br><br><p class="MsoNormal" style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:Symbol;mso-ascii-font-family:&quot;Times<br>New Roman&quot;;<br>mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;<br>mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:EN-IN">·</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp; I learned<br>about the database operation performed to store user details, assign role to<br>user.<o:p></o:p></span></p><br><br><p class="MsoNormal"<br>style="margin-bottom:0cm;line-height:normal"><span style="font-size:12.0pt;font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;<br>mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;<br>mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:EN-IN">·</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:<br>&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:<br>EN-IN">&nbsp;<br>I learned about how a user can not access the roles restricted parts<br>inthe website.<o:p></o:p></span></p><br><br><p class="MsoNormal"><span style="font-size:12.0pt;line-height:107%;font-family:<br>Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;<br>mso-bidi-font-family:&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:none;<br>mso-fareast-language:EN-IN">·</span><span style="font-size:12.0pt;line-height:<br>107%;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times<br>New Roman&quot;;<br>mso-font-kerning:0pt;mso-ligatures:none;mso-fareast-language:EN-IN">&nbsp; I learned about how to check the username and<br>email are already<br>a part of the database so if new user try to use the<br>same it will give a user friendly error message.<o:p></o:p></span></p><br></td></tr>
+<tr><td> <em>Response:</em> <ul><li>In these milestone I learned the user authentication using the wtf forms, validators<br>and flask login</li><li>I also learned about registering the user</li><li>I learned that the user<br>can login with the username and email, for these we are using the<br>rex functions</li><li>I learned about the user roles using flask principles.</li><li>I learned about the<br>sessions</li><li>I learned about how to show error friendly messages to the user</li><li>I learned<br>about the database operation performed to store user details, assign role to user.</li><li>I<br>learned about how a user can not access the roles restricted parts in<br>the website.</li><li>I learned about how to check the username and email are already<br>a part of the database so if new user try to use the<br>same it will give a user friendly error message.</li></ul><br></td></tr>
 <tr><td> <em>Sub-Task 2: </em> Prod Application Link to Login Page</td></tr>
-<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://is601-vp645-prod.herokuapp.com/">https://is601-vp645-prod.herokuapp.com/</a> </td></tr>
+<tr><td> <a rel="noreferrer noopener" target="_blank" href="https://is-601-jp2267-fp-prod.herokuapp.com/">https://is-601-jp2267-fp-prod.herokuapp.com/</a> </td></tr>
 </table></td></tr>
-<table><tr><td><em>Grading Link: </em><a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-004-S23/is601-milestone1-deliverable/grade/vp645" target="_blank">Grading</a></td></tr></table>
+<table><tr><td><em>Grading Link: </em><a rel="noreferrer noopener" href="https://learn.ethereallab.app/homework/IS601-005-F22/is601-milestone1-deliverable/grade/jp2267" target="_blank">Grading</a></td></tr></table>

@@ -9,7 +9,7 @@ from flask_bcrypt import Bcrypt
 bcrypt = Bcrypt()
 
 from flask_principal import Identity, AnonymousIdentity, \
-    identity_changed
+     identity_changed
 
 auth = Blueprint('auth', __name__, url_prefix='/',template_folder='templates')
 
@@ -98,13 +98,13 @@ def landing_page():
 @auth.route("/logout", methods=["GET"])
 def logout():
     logout_user()
-    # Remove session keys set by Flask-Principal
+     # Remove session keys set by Flask-Principal
     for key in ('identity.name', 'identity.auth_type'):
         session.pop(key, None)
 
     # Tell Flask-Principal the user is anonymous
     identity_changed.send(current_app._get_current_object(),
-                        identity=AnonymousIdentity())
+                          identity=AnonymousIdentity())
     flash("Successfully logged out", "success")
     return redirect(url_for("auth.login"))
 
