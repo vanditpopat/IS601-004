@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - dev
-      - Flask-Sample
 
 # Your workflows jobs.
 jobs:
@@ -17,7 +16,7 @@ jobs:
       DB_URL: ${{secrets.DB_URL}}
       PORT: 8080
       # change to the project directory you're deploying
-      WORKING_DIRECTORY: flask_sample
+      WORKING_DIRECTORY: Banking
     defaults:
       run:
           working-directory: ${{env.WORKING_DIRECTORY}}
@@ -67,6 +66,6 @@ jobs:
           # For more information look at https://devcenter.heroku.com/articles/process-model
           process_type: web
           
-   
+  
           
 ### ⬆ IMPORTANT PART ⬆ ###
