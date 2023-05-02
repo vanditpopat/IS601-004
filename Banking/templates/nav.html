@@ -20,9 +20,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('auth.landing_page')}}">Home</a>
                 </li>
+                
+                
+
+
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('auth.profile')}}">Profile</a>
                 </li>
+
+
+
                 <!-- roles nav (requires admin )-->
                 {% if current_user.has_role("Admin") %}
                 {% set roles = [
@@ -32,6 +40,17 @@
                 ] %}
                 {{dropdown_nav("Roles", roles)}}
                 {% endif %}
+
+
+                 <!-- accounts nav -->
+                 {% set accounts = [
+                    ("accounts.create", "Create"),
+                    ("accounts.list", "List"),
+                    ("accounts.deposit", "Deposit"),
+                    ("accounts.withdraw", "Withdraw"),
+                    ] %}
+                    {{dropdown_nav("Accounts", accounts)}}
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('auth.logout')}}">Logout</a>
                 </li>

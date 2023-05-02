@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}{{type}} Account{% endblock %}
+{% block content %}
+{% from "_formhelpers.html" import render_field %}
+<div class="container-fluid">
+    <div class="h4">{{type}} Account</div>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{render_field(form.acc_type)}}
+        {{render_field(form.funds)}}
+        <label for="creation_date">Date</label>
+        <input class="form-control" id="creation_date" name="creation_date" size="16" type="date" value="{{ form.creation_date.data }}" readonly>
+        <br>
+        {{form.submit(class="btn btn-primary")}}
+    </form>
+</div>
+{% endblock %}
