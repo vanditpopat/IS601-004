@@ -13,6 +13,8 @@ def is_valid_username(username):
 
 class AuthForm(FlaskForm):
     # shared form that groups most of our validations together to reduce repetition
+    first_name = StringField("first_name")
+    last_name = StringField("last_name")
     username = StringField("username", validators=[DataRequired(), Length(2, 30)])
     email = EmailField("email", validators=[DataRequired(), Email()])
     password = PasswordField("password", validators=[DataRequired(), EqualTo('confirm', message='Passwords must match'), Length(8)])
@@ -48,6 +50,8 @@ class LoginForm(AuthForm):
                 
 class ProfileForm(AuthForm):
     current_password = PasswordField("current password", validators=[Optional()])
+    first_name = StringField("first_name")
+    last_name = StringField("last_name")
     # https://wtforms.readthedocs.io/en/3.0.x/forms/#form-inheritance
     def __init__(self, *args, **kwargs):
         super(ProfileForm, self).__init__( *args, **kwargs)

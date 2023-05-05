@@ -57,6 +57,7 @@ def create_app(config_filename=''):
             print("loading user from DB") # note: we'd lose roles here since it makes a new user object without a roles query
             try:
                 result = DB.selectOne("SELECT id, email FROM IS601_Users WHERE id = %s", user_id)
+                print(result)
                 if result.status:
                     return User(**result.row)
             except Exception as e:
