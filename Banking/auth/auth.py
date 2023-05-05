@@ -9,7 +9,7 @@ from flask_bcrypt import Bcrypt
 bcrypt = Bcrypt()
 
 from flask_principal import Identity, AnonymousIdentity, \
-     identity_changed
+    identity_changed
 
 auth = Blueprint('auth', __name__, url_prefix='/',template_folder='templates')
 
@@ -36,7 +36,7 @@ def register():
         try:
             hash = bcrypt.generate_password_hash(password)
             # save the hash, not the plaintext password
-            result = DB.insertOne("INSERT INTO IS601_Users (email, username,first_name,last_name,password) VALUES (%s, %s, %s)", email, username,first_name,last_name, hash)
+            result = DB.insertOne("INSERT INTO IS601_Users (email, username,first_name,last_name,password) VALUES (%s, %s, %s,%s,%s)", email, username,first_name,last_name, hash)
             if result.status:
                 flash("Successfully registered","success")
         except Exception as e:
