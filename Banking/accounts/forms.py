@@ -45,7 +45,7 @@ class TransferForm(FlaskForm):
 class ExtTransferForm(FlaskForm):
     account_src = SelectField("Account Source", choices=[], validators=[DataRequired()])
     last_name = StringField("Last Name")
-    account_dest = StringField("Last 4 digits of destination user’s account number")
+    account_dest = StringField("Last 4 digits of destination user's account number")
     funds = FloatField("Funds", validators=[InputRequired(),NumberRange(min=1)])
     memo = TextAreaField ("Memo", validators=[])
     submit = SubmitField("Submit")
