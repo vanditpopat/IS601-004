@@ -1,17 +1,16 @@
 {% extends "layout.html" %}
-{% block title %}Register{% endblock %}
+{% block title %}External Transfer{% endblock %}
 {% block content %}
 {% from "_formhelpers.html" import render_field %}
 <div class="container-fluid">
-    <div class="h3">Register</div>
+    <div class="h4">External Transfer</div>
     <form method="POST">
         {{ form.hidden_tag() }}
-        {{render_field(form.username)}}
-        {{render_field(form.first_name)}}
+        {{render_field(form.account_src)}}
         {{render_field(form.last_name)}}
-        {{render_field(form.email)}}
-        {{render_field(form.password)}}
-        {{render_field(form.confirm)}}
+        {{render_field(form.account_dest)}}
+        {{render_field(form.funds)}}
+        {{render_field(form.memo)}}
         {{form.submit(class="btn btn-primary")}}
     </form>
 </div>
