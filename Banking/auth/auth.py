@@ -31,10 +31,12 @@ def register():
         email = form.email.data
         password = form.password.data
         username = form.username.data
+        first_name = form.first_name.data
+        last_name = form.last_name.data
         try:
             hash = bcrypt.generate_password_hash(password)
             # save the hash, not the plaintext password
-            result = DB.insertOne("INSERT INTO IS601_Users (email, username, password) VALUES (%s, %s, %s)", email, username, hash)
+            result = DB.insertOne("INSERT INTO IS601_Users (email, username,first_name,last_name,password) VALUES (%s, %s, %s)", email, username,first_name,last_name, hash)
             if result.status:
                 flash("Successfully registered","success")
         except Exception as e:
@@ -50,7 +52,7 @@ def login():
         password = form.password.data
         if is_valid:
             try:
-                result = DB.selectOne("SELECT id, email, username, password FROM IS601_Users where email= %(email)s or username=%(email)s", {"email":email})
+                result = DB.selectOne("SELECT id, email, username, first_name, last_name, password FROM IS601_Users where email= %(email)s or username=%(email)s", {"email":email})
                 if result.status and result.row:
                     hash = result.row["password"]
                     if bcrypt.check_password_hash(hash, password):
@@ -98,13 +100,13 @@ def landing_page():
 @auth.route("/logout", methods=["GET"])
 def logout():
     logout_user()
-     # Remove session keys set by Flask-Principal
+    # Remove session keys set by Flask-Principal
     for key in ('identity.name', 'identity.auth_type'):
         session.pop(key, None)
 
     # Tell Flask-Principal the user is anonymous
     identity_changed.send(current_app._get_current_object(),
-                          identity=AnonymousIdentity())
+                        identity=AnonymousIdentity())
     flash("Successfully logged out", "success")
     return redirect(url_for("auth.login"))
 
@@ -120,6 +122,8 @@ def profile():
         current_password = form.current_password.data
         password = form.password.data
         confirm = form.confirm.data
+        first_name = form.first_name.data
+        last_name = form.last_name.data
         # handle password change only if all 3 are provided
         if current_password and password and confirm:
             try:
@@ -143,14 +147,14 @@ def profile():
         
         if is_valid:
             try: # update email, username (this will trigger if nothing changed but it's fine)
-                result = DB.update("UPDATE IS601_Users SET email = %s, username = %s WHERE id = %s", email, username, user_id)
+                result = DB.update("UPDATE IS601_Users SET email = %s, username = %s, first_name = %s, last_name = %s WHERE id = %s", email, username,first_name,last_name, user_id)
                 if result.status:
                     flash("Saved profile", "success")
             except Exception as e:
                 check_duplicate(e)
     try:
         # get latest info if anything changed
-        result = DB.selectOne("SELECT id, email, username FROM IS601_Users where id = %s", user_id)
+        result = DB.selectOne("SELECT id, email, username,first_name,last_name FROM IS601_Users where id = %s", user_id)
         if result.status and result.row:
             user = User(**result.row)
             # switch how user is loaded so we don't lose error validations
@@ -158,6 +162,8 @@ def profile():
             print("loading user", user)
             form.username.data = user.username
             form.email.data = user.email
+            form.first_name.data = user.first_name
+            form.last_name.data = user.last_name
             # TODO update session
             current_user.email = user.email
             current_user.username = user.username
