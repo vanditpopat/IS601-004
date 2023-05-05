@@ -5,6 +5,8 @@ from flask_login import login_required, current_user
 from sql.db import DB
 from accounts.forms import CreateAccountForm, DepositWithdrawForm, TransferForm, ExtTransferForm
 from werkzeug.datastructures import MultiDict
+from flask_paginate import Pagination,get_page_args
+
 accounts = Blueprint('accounts', __name__, url_prefix='/accounts',template_folder='templates')
 #v645 Date 05/02/2023
 def refresh_account(account_id):
@@ -86,6 +88,7 @@ def list():
         flash("Error getting accounts", "danger")
     return render_template("accounts_list.html", rows=rows)
 
+# def get_user(offset = 0, per_page = 10):
 
 #v645 Date 05/02/2023
 @accounts.route("/transactions", methods=["GET"])
@@ -94,11 +97,14 @@ def transactions():
     user_id = current_user.get_id()
     acc_number = request.args.get("acc_number")
     page = request.args.get('page', 1, type=int)
-    items_per_page = 10
+    items_per_page = 2
     start_date = request.args.get('start_date', '' )
     end_date = request.args.get('end_date', '' )
     transaction_type = request.args.get('transaction_type', '' )
 
+    start_pos = 0 if page == 1 else items_per_page * (page - 1) 
+    
+    
     account = {}
     try:
         result = DB.selectOne("SELECT id, account_number, account_type, creation_date, modified, balance FROM IS601_Accounts WHERE account_number=%s AND user_id=%s LIMIT 1", acc_number, user_id)
@@ -110,6 +116,7 @@ def transactions():
 
     rows = [] 
     try:
+        count = f"SELECT COUNT(account_src) FROM IS601_Transactions WHERE account_src={account['id']}"
         query = f"SELECT (SELECT account_number FROM IS601_Accounts WHERE id=transactions.account_src) as account_src, (SELECT account_number FROM IS601_Accounts WHERE id=transactions.account_dest) as  account_dest, transaction_type, balance_change, expected_total, created FROM IS601_Transactions transactions WHERE account_src={account['id']}"
 
         if start_date != '':
@@ -124,6 +131,7 @@ def transactions():
         query += f" ORDER BY id DESC LIMIT 100"
 
         print(query)
+        count_result = DB.selectAll(count)
         result = DB.selectAll(query)
         if result.status and result.rows:
             rows = result.rows
@@ -131,8 +139,10 @@ def transactions():
         print(e)
         flash("Error getting account transactions", "danger")
 
-    start_pos = 0 if page == 1 else items_per_page * (page - 1) 
-    pages = math.ceil(len(rows)/10)
+    # page,per_page,offest = get_page_args(page_parameter="page",per_page_parameter="per_page")
+
+    # pagination_users = get_users(offest=offest,per_page=per_page)
+    pages = math.ceil(len(rows)/2)
     rows = rows[start_pos: start_pos + items_per_page]
     return render_template("transactions_list.html", rows=rows, pages=pages, current_page=page, account=account)
 
@@ -223,7 +233,7 @@ def transfer():
             rows = result.rows
     except Exception as e:
         print(e)
-
+    #vp645 Date 05/03/2023
     form = TransferForm(accounts=rows)
     if form.validate_on_submit():
         if form.account_src.data == form.account_dest.data:
