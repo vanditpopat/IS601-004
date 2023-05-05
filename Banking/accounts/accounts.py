@@ -5,7 +5,7 @@ from flask_login import login_required, current_user
 from sql.db import DB
 from accounts.forms import CreateAccountForm, DepositWithdrawForm, TransferForm, ExtTransferForm
 from werkzeug.datastructures import MultiDict
-from flask_paginate import Pagination,get_page_args
+
 
 accounts = Blueprint('accounts', __name__, url_prefix='/accounts',template_folder='templates')
 #v645 Date 05/02/2023
