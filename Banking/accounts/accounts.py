@@ -274,7 +274,7 @@ def ext_transfer():
             rows = result.rows
     except Exception as e:
         print(e)
-
+    #vp645
     form = ExtTransferForm(accounts=rows)
     if form.validate_on_submit():
         src_expected_total = expected_balance(form.account_src.data, form.funds.data*-1)
